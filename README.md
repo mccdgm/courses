@@ -22,7 +22,7 @@ If the course is **accelerated or online**, that information should be listed in
 
 If the course has **not run before**, the class `new` should be added to the parent `<div class="card">`. The course can also be added to the featured/new section.
 
-Courses should be organized by course code in ascending order. Separate courses by their course code prefix, such as DGM or WEB. Each course prefix group should contain a `<div class="card-set my-4">`, with individual course cards inside it.
+Courses should be organized by course code in ascending order. Separate courses by their course code prefix, such as DGM or WEB. Each course prefix group should contain a `<div class="card-set">`, with individual course cards inside it.
 
 #### Sample Course Card
 
