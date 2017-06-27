@@ -22,6 +22,8 @@ If the course is **accelerated or online**, that information should be listed in
 
 If the course has **not run before**, the class `new` should be added to the parent `<div class="card">`. The course can also be added to the featured/new section.
 
+If the course is **unavailable or not scheduled**, the class `unavailable` should be added to the parent `<div class="card">` and the footer paragraph should be updated.
+
 Courses should be organized by course code in ascending order. Separate courses by their course code prefix, such as DGM or WEB. Each course prefix group should contain a `<div class="card-set">`, with individual course cards inside it.
 
 #### Sample Course Card

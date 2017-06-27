@@ -145,6 +145,19 @@ header {
   padding: 1rem 0;
 }
 
+/* Unavailable */
+
+.unavailable {
+  -webkit-filter: grayscale(1);
+     -moz-filter: grayscale(1);
+      -ms-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.unavailable .card-block {
+  background-color: #ddd;
+}
+
 /* Links */
 
 a {
