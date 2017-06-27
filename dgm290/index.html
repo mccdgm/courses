@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DGM290 Command Line for Web Developers</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css" class="cp-pen-styles">
+    body {
+      padding: 3rem;
+      background-color: #2f6056;
+      background-image: url(https://stephy.mccdgm.net/images/patterns/transparent/inspiration-geometry.png);
+      background-blend-mode: color-dodge;
+      background-attachment: fixed;
+    }
+
+    .card {
+      background: transparent;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+    .card, .card-header, .card-block {
+      border: 0;
+    }
+
+    .card-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    .card-block {
+      background-color: #002b36;
+      color: #fff;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .circles {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+    }
+
+    .circle {
+      width: 1em;
+      height: 1em;
+      background: #ddd;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-right: 0.25em;
+    }
+    .circle:last-of-type {
+      margin-right: 1rem;
+    }
+
+    .title {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      text-align: center;
+      margin-left: -4rem;
+      color: #999;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .command + .command {
+      margin-top: 1rem;
+    }
+
+    .aqua {
+      color: #5fb3b3;
+    }
+
+    .green {
+      color: #99c794;
+    }
+
+    .yellow {
+      color: #fac863;
+    }
+
+    .red {
+      color: #ec5f67;
+    }
+
+    .purple {
+      color: #c594c5;
+    }
+
+    .aqua, .green, .yellow, .purple, .red {
+      font-weight: 700;
+    }
+
+    .muted {
+      opacity: 0.5;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3;
+      display: block;
+      margin-bottom: 1.8rem;
+    }
+
+    ul {
+      padding: 0 0 0 1.5rem;
+      margin: 0 0 1.5rem;
+    }
+
+    li {
+      list-style-type: none;
+    }
+    li:before {
+      content: '* ';
+      position: absolute;
+      left: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      body {
+        padding: 1rem;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+      h2 {
+        margin-top: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <div class="circles">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+      <span class="title">MCCDGM</span>
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="command">
+            <span class="aqua">you</span>
+            at
+            <span class="green">mcc</span>
+            in
+            <span class="yellow">mccdgm</span>
+            <br>
+            <span class="aqua">$</span>
+            cd dgm290
+          </div>
+          <div class="command">
+            <span class="aqua">you</span>
+            at
+            <span class="green">mcc</span>
+            in
+            <span class="yellow">mccdgm/dgm290</span>
+            <br>
+            <span class="aqua">$</span>
+            npm deploy<br>
+            <span class="muted">&nbsp;&nbsp;gulp deploy:github</span><br>
+            &nbsp;&nbsp;Using gulpfile <span class="purple">~/mccdgm/dgm290/gulpfile.js</span><br>
+            &nbsp;&nbsp;Starting ‘<span class="aqua">deploy:github</span>’...<br>
+            &nbsp;&nbsp;<span class="muted">[gh-pages]</span> Cloning repo<br>
+            &nbsp;&nbsp;<span class="muted">[gh-pages]</span> Checkout branch `gh-pages`<br>
+            &nbsp;&nbsp;<span class="muted">[gh-pages]</span> Copying files to repository<br>
+            &nbsp;&nbsp;<span class="muted">[gh-pages]</span> Adding 18 files.<br>
+            &nbsp;&nbsp;<span class="muted">[gh-pages]</span> Pushing to remote.<br>
+            &nbsp;&nbsp;Finished ‘<span class="aqua">deploy:github</span>’ after <span class="purple">2.90 s</span>
+          </div>
+          <div class="command">
+            <span class="aqua">you</span>
+            at
+            <span class="green">mcc</span>
+            in
+            <span class="yellow">mccdgm/dgm290</span>
+            <br>
+            <span class="aqua">$</span>
+            register spring18
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <h2>
+            <span class="yellow">DGM290:</span>
+            Command Line for Web Developers
+          </h2>
+          <ul>
+            <li>
+              <span class="aqua">Version Control</span>
+              (so you don’t lose your work!)
+            </li>
+            <li>
+              <span class="green">Command-line utilities</span>
+              to automate your process
+            </li>
+            <li>
+              <span class="yellow">Create and deploy</span>
+              websites for free
+            </li>
+            <li>
+              <span class="red">Customize</span>
+              your terminal and code environment
+            </li>
+            <li>
+              <span class="purple">Collaborate</span>
+              with teammates without breaking stuff
+            </li>
+          </ul>
+          Sign up for <span class="yellow">DGM290</span>
+          online with <span class="yellow">Stephy Miehle</span>
+          in Spring&nbsp;2018
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
