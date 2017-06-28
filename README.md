@@ -1,6 +1,6 @@
 # Course Catalog
 
-This catalog will be hosted on MCCDGM and highlight all DGM courses.
+This catalog will be hosted on MCCDGM and highlight all digital media courses.
 
 ## Components
 
