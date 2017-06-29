@@ -1,6 +1,6 @@
 # Course Catalog
 
-This catalog will be hosted on MCCDGM and highlight all digital media courses.
+Overview of digital media courses offered by MCC; viewable on [MCCDGM](https://courses.mccdgm.net)
 
 ## Components
 
@@ -12,7 +12,7 @@ Each course listing should include:
 
 * Name of the course
 
-* Short description, such as an excerpt of the course description
+* A short description, such as an excerpt of the course description
 
 * Thumbnail image in 2:1 aspect ratio (recommended size 600&times;300px)
 
@@ -33,7 +33,7 @@ The course code added on the parent `<div class="card">` is not used for any sty
 ##### With Course Link
 
 ```html
-<div class="card new mb-3 dgm290">
+<div class="card new dgm290">
   <a href="/dgm290" class="card-img-link">
     <img class="card-img-top" src="/images/dgm290.png" alt="DGM290">
   </a>
@@ -55,7 +55,7 @@ The course code added on the parent `<div class="card">` is not used for any sty
 ##### Without Course Link
 
 ```html
-<div class="card new mb-3 dgm290">
+<div class="card new dgm290">
   <img class="card-img-top" src="/images/dgm290.png" alt="DGM290">
   <div class="card-block">
     <h4 class="card-title">
@@ -74,7 +74,7 @@ The course code added on the parent `<div class="card">` is not used for any sty
 
 ### Splash Page
 
-A course "splash page" can be created for each class. This page is freeform and can be tailored to each class and may include components such as links to a class portal or sample assignments (e.g. web105), additional information not covered in the description, and so on. Splash pages should each have their own directory inside `public_html/courses` unless they have their own dedicated subdomain. Make sure that your links point to the right place!
+A course "splash page" can be created for each class. This page is freeform and can be tailored to each class. It may include components such as links to a class portal or sample assignments (e.g. web105), additional information not covered in the description, and so on. Splash pages should each have their own directory inside `public_html/courses` unless they have their own dedicated subdomain. Make sure that your links point to the right place!
 
 ## Technology
 
