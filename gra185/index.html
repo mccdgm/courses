@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRA185 Color Theory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans+Condensed:300,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: indianred;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        .container{
+            max-width: 960px;
+            min-height: 400px;
+            margin: 3em auto;
+            padding: 0;
+            
+        }
+        h1{
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 5px black;
+            font-size: 4.25em;
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        h1 small{
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 700;
+            color: white;
+            font-size: 60%;
+        }
+        h2{
+            color: black;
+            text-align: center;
+        }
+        h2 strong{
+            font-family: 'Amatic SC', cursive;
+            font-size: 1.15em;
+            color: indianred;
+        }
+        h3{
+            text-align: center;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            font-size: 1.5em;
+            padding-top: 20px;
+        }
+        .card{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        header{
+            max-width: 960px;
+            background: url(geometric-color.png) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            margin-top: 2.5em;
+            margin: auto;
+            padding: 1.5em;
+            min-height: 150px;
+        }
+        main{
+            padding: 1em;
+            min-height: 200px;
+            background-color: #f2f2f2;
+        }
+        footer{
+            max-width: 960px;
+            margin: auto;
+            background-color: #e6e6e6;
+            min-height: 50px;
+            padding: 15px;
+            border-bottom: 15px solid #82c9a6;
+        }
+        .row{
+            margin: .5em;
+        }    
+        .amatic{
+            font-family: 'Amatic SC', cursive;
+        }
+        @media screen and (max-width: 800px) {
+            body {
+                margin: 1em;
+          }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="card">
+        <h1><small>GRA185</small><br>Color Theory</h1>  
+    </header>
+    <main class="card">
+         <div class="row">
+              <div class="col-xs-5">
+                  <h3>RGB</h3>
+              </div>
+              <div class="col-xs-2">
+                  <h3 class="amatic">vs.</h3>
+              </div>
+              <div class="col-xs-5">
+                  <h3>CMYK</h3>
+              </div>
+        </div>
+        <div class="row">
+              <div class="col-xs-5">
+                  <h3>ADDITIVE</h3>
+              </div>
+              <div class="col-xs-2">
+                  <h3 class="amatic">vs.</h3>
+              </div>
+              <div class="col-xs-5">
+                  <h3>SUBTRACTIVE</h3>
+              </div>
+        </div>
+        <div class="row">
+              <div class="col-xs-5">
+                  <h3>TRADITIONAL</h3>
+              </div>
+              <div class="col-xs-2">
+                  <h3 class="amatic">vs.</h3>
+              </div>
+              <div class="col-xs-5">
+                  <h3>DIGITAL</h3>
+              </div>
+        </div>
+        <p>Explore the <strong>theory of color</strong> as it pertains to <strong>visual communications.</strong></p>
+    </main>
+    <footer class="card">
+        <h2>Sign up for <strong>Color Theory</strong> in Fall 2017 with <strong>Teece Bowman</strong>.</h2>
+    </footer>   
+</div>  
+    
+</body>
+</html>
