@@ -85,13 +85,15 @@ header {
   box-shadow: var(--shadow-xlight);
 }
 
-.card-img-link {
+.card-img-link,
+.card > a {
   display: block;
   position: relative;
   background-color: var(--purple);
 }
 
-.card-img-link:before {
+.card-img-link:before,
+.card > a:before {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   content: '';
@@ -106,7 +108,8 @@ header {
   z-index: 25;
 }
 
-.card-img-link:hover:before {
+.card-img-link:hover:before,
+.card > a:hover:before {
   background: var(--purple);
 }
 
