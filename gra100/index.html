@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRA100 Adobe Design Suite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            background-color: #232323;
+        }
+        .card{
+            background: white;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+      @media screen and (max-width: 500px) {
+        body {
+            margin: .5em;  
+        }
+    }
+        .container{
+            margin: 30px auto;
+            border-radius: 3px;
+            max-width: 700px;
+            min-height: 300px;
+            padding: 20px;
+            background-color: white;
+        }
+        .flex-container{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 5em;
+        }
+        
+        #bridge{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            border: 6px solid #f2d42b;
+            border-radius: 3px;
+            color: #f2d42b;
+            background-color: #111;
+            margin: 10px auto;
+            text-align: center;
+        }
+        #photoshop{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            border: 6px solid #61c3ed;
+            border-radius: 3px;
+            color: #61c3ed;
+            background-color: #111;
+            margin: 10px auto;
+            text-align: center;
+        }
+        #illustrator{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            border: 6px solid #ffa530;
+            border-radius: 3px;
+            color: #ffa530;
+            background-color: #111;
+            margin: 10px auto;
+            text-align: center;
+        }
+        #indesign{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            border: 6px solid #ef6bb4;
+            border-radius: 3px;
+            color: #ef6bb4;
+            background-color: #111;
+            margin: 10px auto;
+            text-align: center;
+        }
+        header{
+            padding: 15px;
+        }
+        header:after {
+            background: linear-gradient(to right, #f2d42b 25%,#61c3ed 25%, #61c3ed 50%, #ffa530 50%, #ffa530 75%, #ef6bb4 75%);
+            position: absolute;
+            content: '';
+            height: 18px;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+        h1{
+            text-align: center;
+            font-weight: 700;
+        }
+        h1 small{
+            font-weight: 400;
+            color: #61c3ed;
+        }
+        footer{
+            padding: 20px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        strong{
+            color: #ef6bb4;
+        }
+    </style>
+</head>
+<body>
 
+<div class="container card">
+    <header>
+        <h1><small>GRA100</small> Adobe Design Suite</h1>
+    </header>
+    <main>
+       <p>Gain a foundation in industry standard software for design and multimedia production fields.</p>
+        <div class="flex-container">
+            <div id="bridge">
+                <h2>Br</h2>
+            </div>
+            <div id="photoshop">
+                <h2>Ps</h2>
+            </div>   
+            <div id="illustrator">
+                <h2>Ai</h2>
+            </div> 
+            <div id="indesign">
+                <h2>Id</h2>
+            </div>
+        </div>
+    </main>
+    <footer>Offered live during <strong>Spring, Summer and Fall</strong> semesters.</footer>
+</div>     
+</body>
+</html>
