@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRA183 Typography I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900i|Open+Sans:400,600|Oswald:300,600" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: url(block-type.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .card{
+            background: white;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+      @media screen and (max-width: 500px) {
+        body {
+            margin: 1em;
+      }
+    }
+        .container{
+            max-width: 500px;
+            min-height: 300px;
+            padding: 20px;
+            border-bottom: 20px solid #916d6d;
+        }
+        
+    /* Fonts --------------------------------------------- */
+        h1{
+           font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+            font-size: 42px; 
+        }
+        h2{
+            font-family: 'Merriweather', serif;
+            font-weight: 400;
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: #916d6d;
+        }
+        h3{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            line-height: 1.25;
+            color: slategray;
+        }
+        h4{
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 18px;
+        }
+        h5{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 2;
+        }
+        h6{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #916d6d;
+            
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+        }
+        h1.header{
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+      <h1 class="header">GRA183 Typography I</h1>
+       <div class="card container">
+            <h1>What is typography?</h1>
+            <h2>The art or procedure of arranging type or processing data and printing from it.</h2>
+            <h3>Explore the use of type,</h3>
+            <h4>type form and type creation.</h4>
+            <h5>Utilize creative approaches in the use of type</h5>
+            <h6>to solve a variety of visual problems in graphic design.</h6>
+            <br><p>GRA183 is offered <strong>live </strong>during the <strong>Fall</strong>.</p>
+       </div>
+    </main>
+    
+</body>
+</html>
