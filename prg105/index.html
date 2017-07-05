@@ -1,1 +1,140 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRG105 Programming Logic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i|PT+Sans:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-family: 'PT Sans', sans-serif;
+            font-size: 17px;
+            background: blue;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, blue, #333);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, blue, #333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .card{
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            background-color: white;
+            border: 3px solid gainsboro;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+      @media screen and (max-width: 500px) {
+        body {
+            margin: .5em;  
+        }
+          .hide-mobile{
+              display: none;
+          }
+          .top{
+            margin-top: .5em;
+          }
+        }
+        
+        .container{
+            margin: auto;
+            max-width: 800px;
+        }
+        .code{
+            font-family: 'Ubuntu Mono', monospace;
+        }
+        .line{
+            color: darkgray;
+        }
+        .purple{
+            color: purple;
+        }
+        .blue{
+            color: blue;
+        }
+        .green{
+            color: limegreen;
+        }
+        .glyphicon.glyphicon-menu-right{
+            font-size: 10px;
+            color: maroon;
+        }
+        header{
+            border-bottom: 10px solid darkgray;
+            padding: 20px;
+        }
+        .comment{
+            font-style: italic;
+            color: darkgray;
+        }
+        .tab{
+            background-color: white;
+            width: 150px;
+            padding: 8px;
+            margin-left: -15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-left: 2px solid gainsboro;
+            border-top: 2px solid gainsboro;
+            border-right: 2px solid gainsboro;
+        }
+        .icon{
+            width: 20px;
+            margin-right: 10px;
+        }
+        .gray{
+            background-color: darkgray;
+            background: -webkit-linear-gradient(to bottom, darkgray, gray);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, darkgray, gray); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .top{
+            margin-top: 1em;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        footer, main{
+            padding: 20px;
+            margin: 0 auto;
+        }
+        h1{
+            font-family: 'Ubuntu Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+<div class="container top gray">
+    <div class="tab"><img src="python-icon.png" alt="pycharm python icon" class="icon">prg105.py <span class="close">×</span></div>
+</div>
+<div class="container card">
+    <header class="row code">
+       <div class="col-xs-1 hide-mobile">
+           <p class="line">1</p>
+           <p class="line">2</p>
+           <p class="line">3</p>
+       </div>
+       <div class="col-xs-11">
+           <p class="comment">
+               &#35; Offered online in Spring and Fall
+           </p>
+           <p>
+               prg105 = <span class="green">&quot;Programming Logic&quot;</span>
+           </p>
+           <p>
+                <span class="purple">print</span>&#40;prg105&#41;
+           </p>
+       </div>
+        
+    </header>
+    <main>
+        <h1><span class="blue">Programming Logic</span></h1>
+        <p>
+            <span class="glyphicon glyphicon-menu-right"></span>
+            <span class="glyphicon glyphicon-menu-right"></span>
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </p>
+        <p>
+            Programming Logic introduces core programming concepts including sequence, iteration, decision statements, data types, accessing and storing data, objects and classes.
+        </p>
+    </main>
+</div>     
+</body>
+</html>
