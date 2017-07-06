@@ -1,1 +1,133 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DGM125 Digital Drawing I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700i,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+            background: #06beb6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-size: 16px;
+        }
+        h1{
+            font-weight: 300;
+            font-size: 2.25em;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+        }
+        h2{
+            font-size: 1.75em;
+            font-weight: 700;
+            color: #06beb6;
+        }
+        em{
+            color: cadetblue;
+            font-weight: 700;
+        }
+        .container{
+            background-color: gainsboro;
+            max-width: 638px;
+            margin: 1.5em auto;
+            margin-bottom: 0;
+            padding: 30px;
+            overflow: auto;
+            border-radius: 15px;
+        }
+        .card{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .center{
+            text-align: center;
+            margin: auto;
+            display: block;
+        }
+        @media screen and (max-width: 500px) {
+      body {
+        margin: 1em;
+      }
+            h1{
+                font-size: 2em;
+            }
+    }
+        header{
+            background: black;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: 10px;
+        }
+        .controls{
+            background: url(geometric-black.jpg) no-repeat top center fixed;
+            min-height: 55px;
+            padding: 10px;
+        }
+        .borders{
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        .left-border{
+            border-left: 2px solid gainsboro;
+            padding: 0;
+            margin: 0;
+            min-height: 50px;
+        }
+        .col-xs-3, .row{
+            padding: 0;
+            margin: 0;
+            min-height: 75px;
+        }
+        main{
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            min-height: 200px;
+            background-color: lightgray;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.12), inset 0 1px 2px rgba(0,0,0,0.24);
+            padding: 20px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 7px 10px 0.25px 10px;
+            margin: 0 auto;
+            max-width: 100px;
+            text-align: center;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            font-weight: 300;
+            letter-spacing: .5px;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="container card">
+        <header>
+             <h1>Digital Drawing I</h1>
+        </header>
+        <div class="controls">
+            <div class="row">
+                <div class="col-xs-3">&nbsp;</div>
+                <div class="col-xs-3 borders">&nbsp;</div>
+                <div class="col-xs-3 left-border borders">&nbsp;</div>
+                <div class="col-xs-3">&nbsp;</div>
+            </div>
+        </div>  
+        <main>
+            <h2>Draw upon your existing drawing skills and/or learn new drawing techniques!</h2>
+            <p>Digital Drawing I is an introduction to the fundamental concepts and techniques of drawing using digital media to create a variety of black and white images.</p>
+            <p><em>Available live during Spring and Fall semesters.</em></p>
+        </main> 
+</div>
+<footer class="card">
+    <p>DGM125</p>
+</footer>
+    
+</body>
+</html>
