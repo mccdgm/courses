@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DGM168 Computer Art I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            background: url(laptop-background.png) no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        @media screen and (max-width: 500px) {
+            body {
+                margin: 1em;
+                font-size: 16px;
+              }
+            }
+        .card{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .components{
+            text-align: center;
+            margin: auto;
+            font-family: 'Roboto Slab', serif;
+        }
+        .center{
+            text-align: center;
+        }
+        .container{
+            margin: 1em auto;
+            max-width: 600px;
+            min-height: 500px;
+            background: #141E30;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: 15px solid white;
+        }
+        h1{
+            color: #f8f9f9;
+            text-align: center;
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.25em; 
+        }
+        h2{
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.25em;
+            margin-top: 0;
+        }
+        h1 small{
+            color: rgb(187,195,204);
+            font-family: 'Raleway', sans-serif;   
+        }
+        header, main, footer{
+            padding: 15px;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        .yellow{
+            color: #FFDC00;
+        }
+        .aqua{
+            color: #7FDBFF;
+        }
+        .orange{
+            color: #FF851B;
+        }
+        strong{
+            letter-spacing: 0.01em;
+        }
+    </style>
+</head>
+<body>
 
+<div class="container card">
+    <header class="row">
+        <div class="col-sm-3">
+            <img src="notebook.png" alt="laptop computer">
+        </div>
+        <div class="col-sm-9">
+        <h1><small>DGM168</small><br>Computer Art I</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Course Description:</h2>
+        <p>Computer Art I is an introductory course in the electronic creation of artworks and images. The capture of images with scanners and other digital input devices is explored. Students learn to manipulate images and output them to print using color laser and ink jet printers. The created images will be critiqued on their technical, aesthetic, and conceptual approaches.</p>
+        <p class="components"><span class="yellow">Create Images</span> &#9679; <span class="aqua">Image Input and Output</span> &#9679; <span class="orange">Image Critique</span></p>
+        <p class="center">Available <strong>live</strong> during <strong>Spring and Fall</strong> semesters.</p>
+    </main>
+</div>     
+</body>
+</html>
