@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRA167 Graphic Design I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700i|Montserrat:400,400i,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-size: 20px;
+            background: url(seamless-background.jpg) center center fixed;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            margin: 1em auto;
+        }
+        .container .jumbotron{ 
+            
+            max-width: 500px;
+            font-size: 1.2em;
+            background: white;
+        }  
+        .jumbotron{
+            padding-top: 0;
+            padding-bottom: 10px;
+        }
+        .container.jumbotron.card-shadow {
+            border-top: 10px solid #ff5719; /* border on top of box */
+            max-width: 800px;
+        }
+        .jumbotron h1{
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 15px;
+            color: #556073;
+            font-family: 'Lora', serif;
+        }
+        .card-shadow {
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+        header{
+            padding: 1em;
+        }
+        header h2{
+            color: #556073;
+            text-transform: uppercase;
+            letter-spacing: 0.015em;
+            font-family: 'Lora', serif;
+            text-align: center;
+        }
+        main h2{
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: darkgray;
+        }
+        header h2 small{
+            color: #ff5719; /* orange red */
+        }
+        dl{
+            padding: .5em;
+            }
+        img{
+            width: 90%;
+            margin: 10px;
+        }
+        footer p{
+            text-align: center;
+            border-top: 2px solid gainsboro;
+            padding-top: 1em;
+        }
+        strong{
+            color: #ff5719;
+        }
+        @media screen and (max-width: 500px) {
+        body {
+            margin: 1em;
+          }
+        }
+    </style>
+</head>
+<body>
+<div class="container jumbotron card-shadow">
+    <div class="row">
+        <header class="col-xs-12 col-sm-3">
+            <img src="magazine.jpg" alt="magazines">
+            <h2><small>GRA167</small><br>Graphic Design I</h2>
+        </header>
+        <main>
+            <div class="col-xs-12 col-sm-9">
+                <dl>
+                <h2>What is...</h2>
+                <dt><h1>graphic design?</h1></dt>
+                <dd><p><em>noun</em><br>the art or skill of combining text and pictures in advertisements, magazines, or books.</p></dd>
+                </dl>
+                
+            </div>
+        </main>
+    </div>
+        <footer>
+            <p>Sign up for this class <strong>live</strong> on campus during <strong>Spring or Fall</strong> semesters.</p>
+        </footer>
+</div>
 
+
+<!--
+ Just images
+                <img src="book.jpg" alt="books">
+                <img src="advertisement.jpg" alt="advertisement for clothing">
+                <img src="magazine.jpg" alt="magazines">
+-->
+
+    
+</body>
+</html>
