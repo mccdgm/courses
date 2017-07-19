@@ -16,9 +16,9 @@ Each course listing should include:
 
 * Thumbnail image in 2:1 aspect ratio (recommended size 600&times;300px)
 
-* Which upcoming semesters will be running a course (i.e. Spring 2018)
+* Which semesters the course is offered (Spring, Summer, Fall)
 
-If the course is **accelerated or online**, that information should be listed inside parentheses following the semester and year.
+If the course is a different format, such as blended or online, that information should be listed inside parentheses following the semester.
 
 If the course has **not run before**, the class `new` should be added to the parent `<div class="card">`. The course can also be added to the featured/new section.
 
@@ -34,20 +34,20 @@ The course code added on the parent `<div class="card">` is not used for any sty
 
 ```html
 <div class="card new dgm290">
-  <a href="/dgm290" class="card-img-link">
-    <img class="card-img-top" src="/images/dgm290.png" alt="DGM290">
+  <a href="dgm290" class="card-img-link">
+    <img class="card-img-top" src="images/dgm290.png" alt="DGM290">
   </a>
   <div class="card-block">
     <h4 class="card-title">
       <strong>
-        <a href="/dgm290">DGM290:</a>
+        <a href="dgm290">DGM290:</a>
       </strong>
       Command Line for Web Developers
      </h4>
     <p class="card-text">
       In Command Line for Web Developers, students will become familiar with UNIX command line tools. Using automated build tools and task runners, students will be able to create and deploy static websites. Students will also learn how to use version control to work with teams and manage projects.
     </p>
-    <p class="card-text small text-muted">Spring 2018 (online)</p>
+    <p class="card-text small text-muted">Spring (online)</p>
   </div>
 </div>
 ```
@@ -56,7 +56,7 @@ The course code added on the parent `<div class="card">` is not used for any sty
 
 ```html
 <div class="card new dgm290">
-  <img class="card-img-top" src="/images/dgm290.png" alt="DGM290">
+  <img class="card-img-top" src="images/dgm290.png" alt="DGM290">
   <div class="card-block">
     <h4 class="card-title">
       <strong>
@@ -67,7 +67,7 @@ The course code added on the parent `<div class="card">` is not used for any sty
     <p class="card-text">
       In Command Line for Web Developers, students will become familiar with UNIX command line tools. Using automated build tools and task runners, students will be able to create and deploy static websites. Students will also learn how to use version control to work with teams and manage projects.
     </p>
-    <p class="card-text small text-muted">Spring 2018 (online)</p>
+    <p class="card-text small text-muted">Spring (online)</p>
   </div>
 </div>
 ```
