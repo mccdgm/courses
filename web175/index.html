@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB175 Web Development I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Source+Sans+Pro:300,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+/*        wet asphalt #34495e */
+/*        emerald #2ecc71 */
+        body{
+            background: #34495e;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #34495e, #182848);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #34495e, #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+        }
+        h1{
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+            text-align: center;
+            font-family: 'Cabin', sans-serif;
+        }
+        h2{
+            font-family: 'Cabin', sans-serif;       
+        }
+        .flex-container {
+            background: #2ecc71; /* emerald green background color */
+            color: white; /* text color */
+            display: -webkit-flex;
+            display: flex;
+            max-width: 700px;
+            min-height: 525px; /* set to this size so looks good on min screen (iphone 5) */
+            margin: 1em auto;
+            padding: 2em;
+            box-shadow: inset 6px 6px 0px rgba(0,0,0,0.3), /*inset shadow for container*/
+                        0 10px 20px rgba(0,0,0,0.19), /* card shadow */
+                        0 6px 6px rgba(0,0,0,0.23); /* card shadow */
+        }
+
+        .flex-item { /* centers text horizontally and vertically in container */
+            max-width: 500px;
+            min-height: 100px;
+            margin: auto;
+            word-wrap: break-word;
+        }
+        @media screen and (max-width: 500px) {
+          body { /* Margin when screen is small so container doesn't touch left and right sides */
+            margin: 1em;
+          }
+        }
+        
+        li {
+            display: block;
+            font-weight: 300;
+        }
+
+        li:before {
+            /*Using a Bootstrap glyphicon as the bullet point*/
+            content: "\e013"; /* glyphicon glyphicon-ok */
+            font-family: 'Glyphicons Halflings';
+            font-size: 16px;
+            float: left;
+            margin-top: 3px;
+            margin-left: -30px;
+            color: #34495e;
+        }
+        p{
+            color: #34495e;
+            padding: 10px;
+        }
+        img{
+            width: 50px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container card">
+        <div class="flex-item">
+        <img src="wordpress.jpg" alt="wordpress" class="img-circle">
+        <h1>WEB175<br>Web Development I</h1>
+        <p>Website Development I is an introduction to professional website design, creation and management techniques. This course uses current industry standard software for image management, website design and planning software. Upon completion of the course, students are able to plan, develop, test, upload, and maintain a website.</p>
+        
+        <ul>
+            <h2>What skills will you learn?</h2>
+            <li>WordPress plugins, themes, etc.</li>
+            <li>Website planning and mockups</li>
+            <li>How to create a WordPress child theme</li>
+            <li>Writing for the web</li>
+            <li>Prototyping and wireframing websites</li>
+            <li>And more!</li>
+        </ul>
+        
+        <p>Sign up online/blended during Fall semesters!</p>
+        
+        </div>
+        
+    </div>
+
+</body>
+</html>
