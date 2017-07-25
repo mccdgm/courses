@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAD257 Programming for iOS III</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans=400,700|Volkhov" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-size: 18px;
+            line-height: 1.6;
+            background: #E44D26;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.005em;
+        }
+        .container{
+            max-width: 1060px;
+            margin: 1em auto;
+        }
+        header.masthead:before{ /* Creates a transparent header image */
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(iphone.jpg) no-repeat top center fixed;
+            background-size: contain;
+            height:100%;
+            width:100%;
+/*            box-shadow: inset 2px 2px 10px rgba(0,0,0,.5);*/
+        }
+        header.masthead{
+            position: relative;
+            z-index: 1;
+        }
+        .center {
+            margin: auto;
+            text-align: center;
+            display: block;
+            color: black;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.25);
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            word-spacing: 0.005em;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            text-shadow: 1px 2px 0px rgba(0,0,0,.5);
+            text-transform: uppercase;
+            font-family: 'Volkhov', serif;
+            padding-bottom: .5em;
+        }
+        h2{
+            font-family: 'Volkhov', serif;
+            text-shadow: 1px 1px 0px rgba(0,0,0,.5);
+        }
+        @media screen and (min-width: 600px){
+            header.masthead {
+                height: 125px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            header.masthead {
+                height: 100px;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            header.masthead {
+                height: 150px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            header.masthead {
+                height: 250px;
+            }
+        }
+        @media screen and (min-width: 2000px) {
+            header.masthead {
+                height: 500px;
+            }
+        }
+        i.fa{
+            font-size: 48px;
+            margin: auto;
+            display: block;
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px 0px rgba(255,255,255,0.25);
 
+        }
+        h3{
+            text-align: center;
+            color: black;
+            font-weight: 700;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.25);
+            
+        }
+        .col-sm-4{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<header class="masthead">
+    
+</header>
+<div class="container">
+   <h1>MAD255 Programming for iOS III</h1>
+   
+   <div class="row">
+       <div class="col-sm-4"><i class="fa fa-image"></i><h3>Concept / Design</h3></div>
+       <div class="col-sm-4"><i class="fa fa-code"></i><h3>Programming</h3></div>
+       <div class="col-sm-4"><i class="fa fa-area-chart"></i><h3>Sales / Marketing</h3></div>
+   </div>
+   
+   <h2>Do you have an idea for an app?</h2>
+   <p>With Programming for iOS III, you will own the entire creative process from start to finish. You will utilize Swift to write your very own app.</p>
+   <p>Programming for iOS III teaches students to create advanced apps that connect to a backend database. Students focus on user experience, device provisioning, analytics, working with the cloud, multi-threaded programming, and device security. Students implement the agile development process to produce functional iterations of their iOS apps.</p>
+   <br>
+   <p class="center">Offered in an online/blended format during Spring semesters.</p>
+</div>
+
+
+</body>
+</html>
