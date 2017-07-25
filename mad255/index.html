@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAD255 Programming for Android III</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans=400,700|Volkhov" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            font-size: 18px;
+            line-height: 1.6;
+            background: gainsboro;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        .container{
+            max-width: 1060px;
+            margin: 1em auto;
+        }
+        header.masthead:before{ /*Creates a transparent header image*/
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(google-play-banner.png) no-repeat top center fixed;
+            background-size: contain;
+            height:100%;
+            width:100%;
+        }
+        header.masthead{
+            position: relative;
+            z-index: 1;
+        }
+        .center {
+            margin: auto;
+            text-align: center;
+            display: block;
+            font-weight: 700;
+        }
+        h1{
+            margin-top: 0;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 2px #000000, 2px 2px 4px rgba(0,0,0,.5);
+            text-transform: uppercase;
+            font-family: 'Volkhov', serif;
+            padding-bottom: .5em;
+            
+        }
+        h2{
+            font-family: 'Volkhov', serif;
+            
+            padding-bottom: 10px;
+            color: black;
+        }
+        @media screen and (min-width: 600px){
+            header.masthead {
+                height: 125px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            header.masthead {
+                height: 100px;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            header.masthead {
+                height: 150px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            header.masthead {
+                height: 250px;
+            }
+        }
+        @media screen and (min-width: 2000px) {
+            header.masthead {
+                height: 500px;
+            }
+        }
+        i.fa{
+            font-size: 48px;
+            padding: 10px 5px;
+            margin: auto;
+            display: block;
+            text-align: center;
+            color: #0082c8;
+        }
+        h3{
+            text-align: center;
+            color: black;
+            font-weight: 700;
+        }
+        .col-sm-4{
+            padding: 10px;
+        }
+        .well{
+            background: rgba(255,255,255,.5);
+            margin: 0 10px;
+        }
+        .well p{
+            color: black;
+        }
+        .banner{
+            width: 100%;
+            background: #667db6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+</head>
+<body>
+<header class="masthead">
+    
+</header>
+<div class="banner"><h1>MAD255 Programming for Android III</h1></div>
+<div class="container row">
+   
+   <div class="row col-sm-4">
+       <i class="fa fa-image"></i><h3>Concept / Design</h3>
+       <i class="fa fa-code"></i><h3>Programming</h3>
+       <i class="fa fa-area-chart"></i><h3>Sales / Marketing</h3>
+   </div>
+   <h2>Do you have an idea for an app?</h2>
+   <div class="col-sm-8 well"><p>With Programming for Android III, you will own the entire creative process from start to finish. You will utilize Java to write your very own app.</p>
+   <p>Programming for Android III teaches students to create advanced apps that connect to a backend database. Students focus on: user experience, device provisioning, analytics, working with the cloud, multi-threaded programming, and device security. Students implement the agile development process to produce functional iterations of Android apps.</p>
+   <br>
+   <p class="center">Offered in an online/blended format during Spring semesters.</p>
+   </div>
+</div>
 
+
+</body>
+</html>
