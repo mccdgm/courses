@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DGM170 Digital Video Production</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: #00b140;
+            background: -webkit-linear-gradient(to right, #215f00, #00b140);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #215f00, #00b140); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: url(lens-2109316_1920.jpg) no-repeat center center fixed;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .flex-container{
+            min-height: 300px;
+            margin: 1em auto;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 100%;
+        }
+        /* Font awesome icons */
+        .fa-play-circle{
+            text-shadow: 0px 0px 5px rgba(0,0,0,.75), -1px -1px #000, 1px 1px #000,
+                         0px 0px 10px rgba(0,0,0,.5);
+        }
+        .fa{
+            color: white;
+        }
+        .fa-film{
+            color: black;
+        }
+        .fa-5x:hover, a:hover{
+            color: #e52d27;
+        }
+        /* Typography */
+        h1{
+            text-shadow: 0px 0px 5px rgba(0,0,0,.75), -1px -1px #000, 1px 1px #000,
+                         0px 0px 10px rgba(0,0,0,.5);
+        }
+        h1, h2{
+            font-family: 'Merriweather', serif;
+        }
+        h3{
+            font-weight: 400;
+            color: #e52d27;
+            color: dimgray;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        strong{
+            color: dimgray;
+            letter-spacing: 0.025em;
+        }
+        /* Modal styling */
+        .modal-content{
+            border: 5px solid #e52d27;
+            background: rgba(255,255,255,.95);
+            color: black;
+        }
+        /* Modal body -- list and paragraph -- */
+        li, p{
+            text-align: left;
+            font-size: 18px;
+        }
+        p{
+            padding: 5px 15px;
+        }
+        ul.fa-ul {
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
 
+    <a href="#" data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-play-circle fa-5x"></i>
+    </a>
+    <h1>Click play.</h1>
+    
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h2 class="modal-title">Ready, set, <em>action!</em></h2>
+       <h3>DGM170 Digital Video Production</h3>
+       <p>Using DSLR cameras&#45; today's industry standard&#45; we'll focus on creating content for YouTube videos and custom projects. We'll also touch on key components for business content and strategy.</p>
+       <ul class="fa-ul">
+          <li><i class="fa-li fa fa-film"></i>Learn how to create content that matters</li>
+          <li><i class="fa-li fa fa-film"></i>Learn effects and editing to make your videos more interesting</li>
+          <li><i class="fa-li fa fa-film"></i>Experiment with green screens and After Effects</li>
+      </ul>
+      </div>
+      <div class="modal-footer">
+          Offered <strong>live</strong> during <strong>Spring and Fall</strong> semesters.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>
