@@ -1,191 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>DGM275 Portfolio Design</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Open+Sans:600,800" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-      /*---------Variables-----------------------------*/
-      :root {
-          --teal: #A9D4C1;
-          --dkteal: #3D6658;
-          --mustard: #D9C457;
-          --yellowgreen: #ECE97E;
-          --ltyellowgreen: #FFFECB;
-          --white: #fff;
-          
-          --shadow-xlight: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      }
-      /*---------General Styling-----------------------------*/
-      body{
-          font: 400 20px 'Open Sans', sans-serif;
-          /* Set background color to fill extra footer space if content doesn't fill size of page on big screens */
-          background-color: var(--dkteal);
-          margin: 0;
-          padding: 0;
-      }
-      .content{
-          padding: 30px 50px;
-      }
-      .portfolio{
-          padding-top: 50px;
-      }
-      
-      /*---------Typography-----------------------------*/
-      h1{
-          font: 400 24px 'Montserrat', sans-serif;
-          text-transform: uppercase;
-      }
-      h1 strong{
-          font: 800 36px 'Open Sans', sans-serif;
-      }
-      h2{
-          font: 800 32px 'Open Sans', sans-serif;
-          text-transform: uppercase;
-          letter-spacing: 0.025em;
-      }
-      p{
-          font: 400 20px 'Montserrat', sans-serif;
-          color: var(--dkteal);
-      }
-      /*---------Navigation-----------------------------*/
-      .navbar {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 14px;
-        letter-spacing: 0.025em;
-        background-color: var(--teal);
-        box-shadow: var(--shadow-xlight);
-      }
-      .navbar-nav li a:hover, a.navbar-brand:hover {
-          color: var(--white) !important;
-      }
-      .navbar-brand, a.navbar-brand, a.navbar-brand:visited {
-          font: 800 16px 'Open Sans', sans-serif;
-          text-transform: uppercase;
-          color: var(--dkteal);
-          letter-spacing: 0.05em;
-      }
-      .navbar-nav li a, .navbar-nav li a:visited{
-          font: 600 16px 'Open Sans', sans-serif;
-          color: var(--dkteal);
-      }
-      /*---------Divs with Content-----------------------------*/
-      .masthead{
-          background-color: var(--yellowgreen);
-          color: var(--dkteal);
-      }
-      #presentation{
-          background-color: var(--ltyellowgreen);
-          color: var(--mustard);
-      }
-      #interview{
-          background-color: var(--ltyellowgreen);
-          color: var(--mustard);
-      }
-      #getting-ready{
-          background-color: var(--ltyellowgreen);
-          color: var(--mustard);
-      }
-      footer, footer p{
-          background-color: var(--dkteal);
-          font-size: 16px;
-          color: var(--white);
-          min-height: 100px;
-      }
-      .container-fluid, .container{
-          margin-right: 0;
-      }
-      </style>
-  
-<!--  presentation techniques, visual presentation, interviewing, resumes, cover letters, requests for letters of recommendation, and a mock interview-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </head>
 <body>
-     <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="index.html">DGM275 Portfolio Design</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#presentation">Presentation</a></li>
-            <li><a href="#interview">Interviewing</a></li>
-            <li><a href="#getting-ready">Getting Ready</a></li>
-          </ul>
+<section class="block dark-bg" style="background-image: url(stefan-stefancik-257625.jpg);">
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-12 col-sm-10 m-auto m-md-0 col-md-8 col-lg-6">
+          <div class="box">
+            <div class="row justify-content-center">
+              <div class="col-12 col-xl-8 text-center">
+                <h1>Portfolio Design</h1>
+                <p class="mt-3 text-h3">DGM275 is one of the last courses before graduation.</p>
+
+                <p class="text-h3">Using work from previous semesters as well as new projects, students showcase their work.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <header class="container-fluid masthead text-center content">
-      <h1>Get ready to present yourself for college transfer, to employers, and to potential clients with<br><strong>DGM 275 Portfolio Design.</strong></h1>
-    </header> 
-    <main>
-        <div class="container-fluid content" id="presentation">
-            <h2>Presentation</h2>
-            <p>Cover presentation techniques including visual presentation. This will include creating a digital portfolio to showcase your work.</p>
-
-        <div class="row portfolio">
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              
-                <img src="cover-letter.jpg" alt="cover letter" style="width:100%">
-                <div class="caption">
-                  <p>Create a cover letter and resume.</p>
-                </div>
-              
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              
-                <img src="job-interview.jpg" alt="job interview" style="width:100%">
-                <div class="caption">
-                  <p>Learn how to excel in interviews.</p>
-                </div>
-              
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              
-                <img src="portfolio.png" alt="portfolio" style="width:100%">
-                <div class="caption">
-                  <p>Create an online portfolio using expert techniques.</p>
-                </div>
-            
-            </div>
+    </div>
+  </section>
+  <section class="block features">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 col-md-8 m-auto col-lg-4">
+          <div class="box accent-stripe accent-blue">
+            <i class="fa fa-font fa-5x mb-4"></i>
+            <h2>Personal Branding</h2>
+            <p>Develop a personal identity system to establish yourself as a pro.</p>
           </div>
         </div>
 
+        <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
+          <div class="box accent-stripe accent-red">
+            <i class="fa fa-desktop fa-5x mb-4"></i>
+            <h2>Web Presence</h2>
+            <p>Create a web portfolio and craft a business-ready reputation.</p>
+          </div>
         </div>
-        <div class="container-fluid content" id="interview">
-            <h2>Interview</h2>
-            <p>Prepare yourself for interviews. Cover interviewing techniques, potential questions you will be asked, and more. You will even participate in a mock interview.</p>
+
+        <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0">
+          <div class="box accent-stripe accent-yellow">
+            <i class="fa fa-picture-o fa-5x mb-4"></i>
+            <h2>Print Portfolio</h2>
+            <p>No tech? No problem. Be ready to showcase your best work offline.</p>
+          </div>
         </div>
-        <div class="container-fluid content" id="getting-ready">
-            <h2>Getting Ready</h2>
-            <p>Prepare all of the collateral you need to present your work. Create a resume to impress, write a cover letter, and learn how to request letters of recommendation.</p>
+      </div>
+    </div>
+  </section>
+  <section class="block dark-bg pb-0">
+    <div class="container">
+      <div class="row text-left justify-content-center">
+        <div class="col-12 col-md-6">
+          <div class="box br-0">
+            <h2>Ready to Sign Up?</h2>
+            <p class="text-h3">This course requires prior approval from the instructor or department chair. Contact them in advance to register and get started.</p>
         </div>
-    </main>
-    <footer class="container-fluid content row">
-        <div class="col-sm-6"><h3>Offered:</h3>
-            <p>This class is offered online during Spring and Fall semesters.</p>
-        </div>
-        <div class="col-sm-6"><h3>Requisites:</h3>
-            <p>Written permit of the department chair. - Must be completed prior to taking this course.</p>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
