@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRG147 Javascript Programming I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+    });
+        
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#flip").css({"color": "white", "text-shadow": "3px 3px 0px #454545, 0px 0px 3px gray", "background": "orange", "border-bottom": "15px solid #cc8400"});
+            });
+        });
+        
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("body").css({"background": "#cc8400"});
+            });
+        });
+        
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("button").css({"background": "#fff", "border-bottom": "solid #454545 5px", "color": "#454545"});
+            });
+        });
+    </script>
+
+    <style>
+        body{
+            background: #b8b8c8;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        @media screen and (max-width: 767px) {
+            body{
+                margin: 1em;
+            }
+        }
+        
+        h1, h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.025em;
+        }
+    
+        #flip{
+            text-shadow: 3px 3px 0px #fff, 0px 0px 3px lightgray;
+            color: #5c5c64;
+            background-color: lavender;
+            border-bottom: 15px solid #b8b8c8;
+            padding: 1em;
+            text-align: center;
+        }
+
+        #panel {
+            padding: 2em;
+            display: none;
+            background: #f2f2f2;
+        }
+        .container{
+            max-width: 600px;
+            margin: 1em auto;
+            border: 15px solid #454545;
+        }
+        
+        .white-border{
+            border: 10px solid #fff;
+        }
+        
+        button{
+            background-color: #f2f2f2;
+            padding: .5em 2em;
+            margin: .75em;
+            color: #fff;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            font-size: 1em;
+            background: #5c5c64;
+            border: 0;
+            border-bottom: solid #fff 5px;
+            text-decoration: none;
+        }
+        
+        :focus { /* Remove shadow when focusing */
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="white-border">
+        <div id="flip">
+            <h1>Interested in learning Javascript?</h1>
+            <button>Click here to find out how!</button>
+        </div>
+        <div id="panel">
+            <h2>Sign up for PRG147 Javascript Programming I</h2>
+            <p>In PRG147 Javascript Programming I, you will learn a solid foundation of the Javascript programming language. By the end of the course, you will have the knowledge and skills necessary to develop JavaScript enhanced web pages.
+            </p>
+            <p>This class is offered online during Fall semesters.</p>
+        </div> 
+    </div>
+</div>
+</body>
+</html>
