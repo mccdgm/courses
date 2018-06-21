@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,800&effect=3d-float|Raleway");
+body {
+  font-family: "Raleway", sans-serif;
+  background: #333333;
+}
+
+.wrapper {
+  background: url("iphone.jpg") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+a {
+  color: #45e2ff;
+  text-decoration: none;
+}
+
+a:hover, a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.navbar {
+  background: #00a6c4;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar h1 {
+  font-size: 2em;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.masthead {
+  background: url("iphone.jpg") no-repeat top center;
+  background-size: cover;
+  display: flex;
+  color: black;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.featured-content {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.featured-content h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.cta {
+  background: rgba(242, 242, 242, 0.9);
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.cta i.fa {
+  color: orangered;
+  text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.1);
+  font-size: 5em;
+  margin: auto;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
+.cta h3 {
+  color: #00a6c4;
+  text-align: center;
+  font-weight: 400;
+}
+
+main {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+footer {
+  background: #333333;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+footer h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: orangered;
+}
+
+.homepage-hero-module {
+  display: flex;
+  border-right: none;
+  border-left: none;
+  max-height: 500px;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-container .poster img {
+  width: 100%;
+}
+
+.video-container .filter {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: flex;
+  min-height: 500px;
+}
+
+.video-container .filter .title {
+  font-weight: 800;
+  justify-content: center;
+  align-content: center;
+  z-index: 200;
+  margin: auto;
+  color: #fff;
+}
+
+.video-container .filter .title h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 4em;
+  text-align: center;
+}
+
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .filter {
+    max-height: 500px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+/*# sourceMappingURL=mad255.css.map */

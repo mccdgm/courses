@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,800&effect=3d-float|Raleway');
+
+$white: #fff;
+$lt-gray: #f2f2f2;
+$black: #000;
+$teal: rgb(0, 166, 196);
+
+$icon: $teal;
+$icon-text: $icon;
+$header-bkg: url('iphone.jpg') no-repeat top center;
+$navbar-bkg: $teal;
+$header-color: black;
+
+$header-font: 'Nunito', sans-serif;
+$body-font: 'Raleway', sans-serif;
+
+body {
+    font-family: $body-font;
+    background: lighten($black, 20%);
+}
+
+.wrapper {
+    background: $header-bkg;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+a {
+    color: lighten($icon, 25%);
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    color: $white;
+    text-decoration: underline;
+}
+
+.navbar {
+    background: $navbar-bkg;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    h1 {
+        font-size: 2em;
+        color: $white;
+        font-family: $header-font;
+        font-weight: 600;
+        padding-top: 5px;
+    }
+}
+
+.masthead {
+    background: $header-bkg;
+    background-size: cover;
+    display: flex;
+    color: $header-color;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.featured-content {
+    background: $white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    h2 {
+        font-family: $header-font;
+        font-weight: 400;
+    }
+}
+
+.cta {
+    background: rgba($lt-gray, .9);
+    font-family: $header-font;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    i.fa{
+        color: orangered;
+        text-shadow: 3px 2px 0 rgba($black, .1);
+        font-size: 5em;
+        margin: auto;
+        margin-bottom: 15px;
+        display: block;
+        text-align: center;
+    }
+    h3{
+        color: $icon-text;
+        text-align: center;
+        font-weight: 400;
+
+    }
+}
+
+main {
+    background: $white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    // min-height: 200px;
+}
+
+footer {
+    background: lighten($black, 20%);
+    color: $white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    h3 {
+        font-family: $header-font;
+        font-weight: 400;
+        color: orangered;
+    }
+}
+
+// Header video from Coverr
+.homepage-hero-module {
+    display: flex;
+    border-right: none;
+    border-left: none;
+    max-height: 500px;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+}
+.video-container .filter {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+    .title {
+        font-weight: 800;
+        justify-content: center;
+        align-content: center;
+        z-index: 200;
+        margin: auto;
+        color: $white;
+        h1 {
+            font-family: $header-font;
+            font-size: 4em;
+            text-align: center;
+        }
+    }
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        max-height: 500px;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
