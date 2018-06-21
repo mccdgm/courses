@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Zilla+Slab+Highlight:400,700");
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  background: url("diagmonds.png");
+  background-color: #333;
+  background-blend-mode: overlay;
+  color: #f3f3f3;
+}
+
+h1:first-of-type {
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: greenyellow;
+  font-size: 4em;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transform: rotate(3deg);
+  padding-top: 25px;
+}
+
+h2 small {
+  font-family: 'Raleway', sans-serif;
+  color: #89e200;
+  padding-top: 0;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.wrapper {
+  margin: 1em auto;
+  display: flex;
+  max-width: 800px;
+  height: 500px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 0;
+  margin: 0;
+  padding: 15px;
+  border: 0px solid transparent;
+  display: flex;
+  min-height: 200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.panel h2 {
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: black;
+  box-shadow: inset 0 0 500px greenyellow, 1px 1px 5px black;
+  border-bottom: 3px solid greenyellow;
+  border-right: 2px solid greenyellow;
+  font-size: 1.4em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.panel h2:nth-child(even) {
+  transform: rotate(-5deg);
+}
+
+.panel h2:nth-child(odd) {
+  transform: rotate(5deg);
+}
+
+.one {
+  background: url(frameworks.jpg) no-repeat center center;
+  background-size: cover;
+  flex: 35%;
+  align-items: center;
+  justify-content: center;
+}
+
+.two {
+  background: url(flexbox.png) no-repeat center center;
+  background-size: cover;
+  flex: 65%;
+  align-items: center;
+  justify-content: center;
+}
+
+.three {
+  background: url(github.png) no-repeat center center;
+  background-size: cover;
+  flex: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.four {
+  background: url(web-design.png) no-repeat center center;
+  background-size: cover;
+  flex: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.five {
+  background: url(php.jpg) no-repeat center center;
+  background-size: cover;
+  flex: 65%;
+  align-items: center;
+  justify-content: center;
+}
+
+.six {
+  background: url(javascript.jpg) no-repeat center center;
+  background-size: cover;
+  flex: 35%;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
+  flex: 100%;
+}
+
+footer {
+  flex: 100%;
+  padding-top: 1em;
+}
+
+footer a {
+  color: greenyellow;
+}
+
+footer a:hover {
+  color: #eee;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 1em;
+  }
+  h1:first-of-type {
+    padding-top: 25px;
+    font-size: 3em;
+  }
+  .one, .two, .three, .four, .five, .six {
+    flex: 100%;
+  }
+}
+/*# sourceMappingURL=web115.css.map */
