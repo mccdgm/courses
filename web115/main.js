@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-
-
   function onHover(number) {
     if (number == '.one') {
       var description = '<h2>Frameworks</h2><p>Learn how to use frameworks for HTML, CSS, and JavaScript including Bootstrap, Material Design, and more!</p>';
@@ -23,7 +20,6 @@ $(document).ready(function(){
       $(this).append(description);
   });
   }
-
   function onMouseOut(number) {
     if (number == '.one') {
       var title = '<h2>Frameworks</h2>';
@@ -44,7 +40,6 @@ $(document).ready(function(){
       $(this).append(title);
   });
   }
-
   onHover('.one');
   onMouseOut('.one');
   onHover('.two');
@@ -57,5 +52,4 @@ $(document).ready(function(){
   onMouseOut('.five');
   onHover('.six');
   onMouseOut('.six');
-
 });
