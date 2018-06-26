@@ -1,0 +1,117 @@
+/////////////////////////////////////////////////////////////////
+//////// General Styles /////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+$background: #fff;
+
+body{
+    background: #e3ffff url(little-triangles.png);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+h1, .font-effect-emboss{
+    color: tomato;
+    font-family: 'Cabin Sketch', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+h2{
+    font-family: 'Cabin', sans-serif;
+}
+h2:nth-of-type(2) {
+  font-family: 'Cabin Sketch', sans-serif;
+  margin-top: 1.25em;
+  font-weight: 700;
+  text-align: center;
+}
+.flex-header {
+  display: flex;
+  min-height: 200px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header-item {
+  justify-content: center;
+  align-content: center;
+}
+.flex-container {
+    background: rgba($background, .85);
+    color: #333; /* text color */
+    display: -webkit-flex;
+    display: flex;
+    max-width: 700px;
+    min-height: 525px; /* set to this size so looks good on min screen (iphone 5) */
+    margin: 1em auto;
+    padding: 2em;
+    border-bottom: 1em solid tomato;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), /* card shadow */
+                0 6px 6px rgba(0,0,0,0.23); /* card shadow */
+}
+.flex-item { /* centers text horizontally and vertically in container */
+    max-width: 500px;
+    min-height: 100px;
+    margin: auto;
+    word-wrap: break-word;
+}
+li {
+    display: block;
+    font-weight: 300;
+}
+li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e013"; /* glyphicon glyphicon-ok */
+    font-family: 'Glyphicons Halflings';
+    font-size: 16px;
+    float: left;
+    margin-top: 3px;
+    margin-left: -30px;
+    color: #34495e;
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #34495e;
+    padding: 10px;
+}
+img{
+  // Wordpress icon below container
+    width: 28px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.btn-default {
+  background: #333;
+  margin: 1em auto;
+  padding: 10px 20px;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  border: 0px transparent;
+  a {
+    color: #f2f2f2;
+  }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+  }
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  background: tomato;
+}
+/////////////////////////////////////////////////////////////////
+//////// Media Queries //////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 768px) {
+  body {
+    /* Margin when screen is small so container doesn't touch left and right sides */
+    margin: 1em;
+  }
+  h1, .font-effect-emboss {
+    font-size: 2.25em;
+  }
+  .flex-header {
+    min-height: 100px;
+  }
+}
