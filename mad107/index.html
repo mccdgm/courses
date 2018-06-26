@@ -11,76 +11,103 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body{
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 14px;
+            line-height: 1.7;
             font-family: 'Playfair Display', serif;
             font-weight: 400;
-            background: ghostwhite;
+            background: #111;
         }
-        @media screen and (max-width: 800px){
-            .container{
-            background-size: auto;
-            }
-        }
+
         h1{
             font-family: 'Josefin Slab', serif;
-            line-height: 1.4;
+            color: #5C2045;
+            font-size: 2.5em;
+            line-height: 1;
             letter-spacing: 0.01em;
             font-weight: 700;
-            text-align: center;
+            /* text-align: center; */
             text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
         }
         h2{
-            font-size: 1.5em;
+            font-size: 1.4em;
+        }
+        h3 {
+            color: #aa5c8c;
         }
         img{
             width: 100%;
         }
         .jumbotron {
-            background: rgba(255,255,255,.8);
+            background: transparent;
+            padding: 2em;
+        }
+        .flex-container1, .flex-container2 {
+            background: rgba(255,255,255,1);
+            font-size: 14px;
             width: 100%;
-            height: 100%;
-            margin: 1em auto;
-            border: 20px solid transparent;
-            -moz-border-image: -moz-linear-gradient(left, red, darkorange, goldenrod, green, blue);
-            -webkit-border-image: -webkit-linear-gradient(left, red, darkorange, goldenrod, green, blue);
-            border-image: linear-gradient(to-left, red, darkorange, goldenrod, green, blue);
-            border-image-slice: 1;
-            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            margin: 0;
         }
-        .red{
-            color: red;
+        .flex-container1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 1em;
+            font-size: 1.2em;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30),
+                        0 15px 12px rgba(0,0,0,0.22);
         }
-        .orange{
-            color: darkorange;
+        .flex-container2 {
+            text-align: right;
+            padding: 2em 4em;
+            background: #111;
+            color: #f2f2f2;
         }
-        .yellow{
-            color: goldenrod;
+        .item1 {
+            max-width: 350px;
+            padding: 1em;
         }
-        .green{
-            color: green;
+        .item2 {
+            max-width: 450px;
+            padding: 1em;
         }
-        .blue{
-            color: blue;
+        .parallax-window {
+            min-height: 200px;
+            background: transparent;
         }
-        h1.text-uppercase {
-    font-size: 2.25em;
-}
+        .parallax-window2 {
+            min-height: 400px;
+            background: transparent;
+        }
+
+        @media (min-width: 868px) {
+            .flex-container1 {
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="parallax2.jpg"></div>
+    <div class="flex-container1">
+                <div class="item1">
+                        <h2>That app you've been dreaming of?</h2>
+                        <h1>It's not far from your fingertips.</h1>
+                </div>
+                <div class="item2">
+                        <p>McHenry County College has the resources for you to learn mobile app development. Bring your ideas to life through code. Learn the fundamentals of the Swift programming language in the Xcode Development Enviornment and implement the skills you learn while creating your very first app.</p>
+                        <p>A focus will be made on the foundational concepts of debugging, version control, and object-oriented programming.</p>
 
-<div class="container">
-   <div class="jumbotron">
-   <h1 class="text-uppercase"><span class="red">D</span><span class="orange">r</span><span class="yellow">e</span><span class="green">a</span><span class="blue">m</span> up your own app idea and bring it to life!</h1>
-   
-   <p>Learn the fundamentals of programming in the Xcode Development Environment using Swift.</p>
-   <p>Learn debugging, version control, and object-oriented programming.</p>
-   
-   <h2>Sign up for MAD107 i0S Programming I in Fall online/blended.</h2>
-   </div>
-</div>
+                </div>
+        </div>
+        <div class="parallax-window2" data-parallax="scroll" data-image-src="parallax1.jpg"></div>
+        <footer class="flex-container2">
+            <h3>Ready to stop dreaming and start creating?</h3>
+            <p>Sign up for MAD107 i0S Programming I during Fall semesters.</p>
+        </footer>
 
+
+<script src="parallax.min.js"></script>
 
 </body>
 </html>
